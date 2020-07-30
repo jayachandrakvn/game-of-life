@@ -13,7 +13,7 @@ RUN wget -O- http://archive.apache.org/dist/maven/maven-3/$MAVEN_VERSION/binarie
   && mv /opt/apache-maven-$MAVEN_VERSION /opt/maven \
   && ln -s /opt/maven/bin/mvn /usr/bin/mvn
 
-USER seluser
+##USER seluser
 
 ENV MAVEN_HOME /opt/maven
 
